@@ -1,9 +1,9 @@
 header.header
     .header__container
         // Navigation
-        nav.nav
+        nav.header__nav.nav
             // Logo
-            a(href="#").logo Panto
+            a(href="#").nav__logo Panto
 
             // Navigation list
             ul.nav-list
@@ -17,6 +17,17 @@ header.header
                     a(href="#").nav-list__link Contact
                     
             // Cart
-            a(href="#")
+            a(href="#").cart
                 img(src="./img/icons/cart.svg", alt="Cart").cart__img
                 .cart__count 0
+        // Header content
+        .header__content
+            h1.header__title Make your interior more minimalistic & modern
+            p Turn your room with panto into a lot more minimalist and modern with ease and speed
+
+            form(action="").header__search.search-form
+                input(
+                    placeholder="Search furniture" 
+                    type="text" autocomplete="off").search-form__input 
+                button.search-form__btn
+                    img(src="./img/icons/search.svg", alt="search icon")
